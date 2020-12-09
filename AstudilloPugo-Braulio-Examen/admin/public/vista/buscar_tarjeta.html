@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/estilo.css" type="text/css" media="screen">
+        <title>Buscar por Tarjeta de Crédito</title>
+        <script src="JavaScript/buscar_tarjeta.js"></script>
+        
+    </head>
+    <body id="cuerpo2">
+        <nav class="menu">
+            <ul> 
+                <li><a href="crear_Pedido_Comida.php">Crear Pedido</a></li>
+                <li><a href="buscar_tarjeta.html">Buscar Tarjeta</a></li>
+                <li><a href="listar.html">Buscar Pedido</a></li>
+    
+            </ul>
+            
+         </nav>   
+         
+         <br> 
+            <form method="GET" onsubmit="return buscarTarjeta()">
+                <input class="campos0"  type="text" id="tarjeta" name="tarjeta" value="">
+                <input class="boton0" type="button" id="buscar" name="buscar" value="Buscar" onclick="buscarTarjeta()">
+            </form>
+            <div id="titulo">
+                <h2 class="titulo">Tarjeta de Crédito</h2>
+            </div>
+            <div id="informacion"></div>
+    </body>
+</html>

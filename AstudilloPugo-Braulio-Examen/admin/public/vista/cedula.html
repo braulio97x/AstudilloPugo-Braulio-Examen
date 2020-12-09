@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="CSS/estilo.css" type="text/css" media="screen">
+ <script type="text/javascript" src="buscar.js"></script>
+ <title>Buscar</title>
+</head>
+<body id="cuerpo2">
+    <nav class="menu">
+        <ul> 
+            <li><a href="login.html">Login</a></li>
+            <li><a href="crear_usuario.html">Crear Usuario</a></li>
+            <li><a href="cedula.html">Buscar por cedula</a></li>
+
+        </ul>
+        
+     </nav>    
+    <article>
+        <br>
+        <br>
+    <form   onsubmit="return buscarPorCedula()" style="display: inline;">
+        <input class="campos0" type="text" id="cedula" name="cedula" value="">
+        <input class="boton0" type="button" id="buscar" name="buscar" value="Buscar" onclick="buscarPorCedula()">
+       </form>
+       <div id="informacion"><b>Datos de la persona</b></div>
+    </article>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/estilo.css" type="text/css" media="screen">
+        <title>Listar Pedido por Tarjeta de credito </title>
+        <script src="JavaScript/listar_pedido_comida.js"></script>
+        <script src="JavaScript/listar_pedido_tarjeta.js"></script>
+    </head>
+    <body id="cuerpo2">
+        <nav class="menu">
+            <ul> 
+                <li><a href="crear_Pedido_Comida.php">Crear Pedido</a></li>
+                <li><a href="buscar_tarjeta.html">Buscar Tarjeta</a></li>
+                <li><a href="listar.html">Buscar Pedido</a></li>
+    
+            </ul>
+            
+         </nav>   
+         <br> 
+            <form method="GET" onsubmit="return listarPedidoTarjeta()">
+                <input class="campos0" type="text" id="tarjeta" name="tarjeta" value="">
+                <input class="boton0" type="button" id="buscar" name="buscar" value="Buscar" onclick="listarPedidoTarjeta()">
+            </form>
+            <div id="titulo">
+                <h2 class="titulo">Listar por Tarjeta el Pedido</h2>
+            </div>
+            <div id="informacion"></div>
+            <br> 
+            <br> 
+            <div id="titulo">
+                <h2 class="titulo">Listar por Nombre de comida</h2>
+            </div>
+            <form method="GET" onsubmit="return listarPedidoComida()">
+                <input class="campos0" type="text" id="comida" name="comida" value="">
+                <input class="boton0" type="button" id="buscar" name="buscar" value="Buscar" onclick="listarPedidoComida()">
+            </form>
+            <div id="informacion2"></div>
+    </body>
+</html>
